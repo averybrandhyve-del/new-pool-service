@@ -16,7 +16,7 @@ const areasDetail = [
   {
     name: "Brandon",
     landmark: "Westfield Brandon & Brandon Parkway",
-    image: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&q=80&w=800",
+    image: "https://upload.wikimedia.org/wikipedia/commons/e/ea/Brandon_Mall_Brandon_Florida.jpg",
     description: "Our home base. We provide weekly cleaning and consistent chemical care throughout Brandon, Valrico, and Bloomingdale.",
     waterChemistryTip: "Brandon's mature oak trees and pine canopies dump heavy organic debris, especially in spring. This organic loading depletes free chlorine and spikes phosphate levels. We perform preventive phosphate treatments and frequent skimmer clears.",
     features: ["Heavy foliage cleanup", "Phosphate management", "Spring pollen filtration"]
@@ -24,7 +24,7 @@ const areasDetail = [
   {
     name: "Riverview",
     landmark: "Alafia River State Park",
-    image: "https://images.unsplash.com/photo-1473448912268-2022ce9509d8?auto=format&fit=crop&q=80&w=800",
+    image: "https://upload.wikimedia.org/wikipedia/commons/2/29/Hurrah_Lake_-_Alafia_River_State_Park.jpg",
     description: "Reliable, weekly maintenance for the growing communities in Riverview, Gibsonton, and South Hillsborough county.",
     waterChemistryTip: "Proximity to the Alafia River basin brings high local humidity and airborne organic spores. We maintain slightly higher stabilizer (CYA) and chlorine residuals to protect against black algae spores common in river areas.",
     features: ["Humidity spore defense", "Algae prevention shocks", "Weekly tile line brushing"]
@@ -32,7 +32,7 @@ const areasDetail = [
   {
     name: "Apollo Beach",
     landmark: "Apollo Beach Manatee Viewing Center & Canals",
-    image: "https://images.unsplash.com/photo-1540339832862-474514150782?auto=format&fit=crop&q=80&w=800",
+    image: "https://upload.wikimedia.org/wikipedia/commons/e/ea/Boardwalk_leading_towards_the_water%2C_overlooked_by_Big_Bend_Power_Station%2C_at_Manatee_Viewing_Center%2C_Apollo_Beach%2C_Florida%2C_on_21_March_2024.jpg",
     description: "Expert saltwater pool maintenance along the Apollo Beach canals, Ruskin, and coastal areas.",
     waterChemistryTip: "Salt-laden sea air can accelerate corrosion on metal pool components. We monitor salt-system cells closely, use corrosion-resistant chemicals, and treat your water to protect surfaces and equipment longevity.",
     features: ["Salt-air chemistry balancing", "Salt cell chemical washing", "Corrosion prevention treatments"]
@@ -40,7 +40,7 @@ const areasDetail = [
   {
     name: "FishHawk & Lithia",
     landmark: "Lithia Springs & FishHawk Ranch Trails",
-    image: "https://images.unsplash.com/photo-1502082553048-f009c37129b9?auto=format&fit=crop&q=80&w=800",
+    image: "https://upload.wikimedia.org/wikipedia/commons/d/da/The_swimming_area_at_Lithia_Springs_Park%2C_Florida_January_4%2C_2015.jpg",
     description: "Top-tier pool services for the beautiful wooded communities of FishHawk, Lithia, and Valrico.",
     waterChemistryTip: "Heavy pine straw and oak leaves combined with acidic soils in naturally wooded areas can lower pool pH and alkalinity. We check alkalinity weekly and buffer your water to protect your pool plaster and tile surfaces.",
     features: ["pH buffer management", "Pine straw debris clearing", "Natural wooded spore defense"]
