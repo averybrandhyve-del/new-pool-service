@@ -8,7 +8,7 @@ const areasDetail = [
   {
     name: "Tampa",
     landmark: "Tampa Riverwalk & Bayshore Boulevard",
-    image: "https://images.unsplash.com/photo-1582268611958-ebfd161ef9cf?auto=format&fit=crop&q=80&w=800",
+    image: "https://images.unsplash.com/photo-1543872084-c7bd3822856f?auto=format&fit=crop&q=80&w=800",
     description: "Servicing residential pools across the heart of Tampa. Our routes include South Tampa, New Tampa, Carrollwood, and Westchase.",
     waterChemistryTip: "Tampa's high summer temperatures increase water evaporation, concentrating minerals. We closely monitor Calcium Hardness and Total Dissolved Solids (TDS) to prevent scaling on your pool plaster.",
     features: ["Evaporation monitoring", "Urban pollen filtration", "Summer stormwater balancing"]
@@ -16,7 +16,7 @@ const areasDetail = [
   {
     name: "Brandon",
     landmark: "Westfield Brandon & Brandon Parkway",
-    image: "https://images.unsplash.com/photo-1564013799919-ab600027ffc6?auto=format&fit=crop&q=80&w=800",
+    image: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&q=80&w=800",
     description: "Our home base. We provide weekly cleaning and consistent chemical care throughout Brandon, Valrico, and Bloomingdale.",
     waterChemistryTip: "Brandon's mature oak trees and pine canopies dump heavy organic debris, especially in spring. This organic loading depletes free chlorine and spikes phosphate levels. We perform preventive phosphate treatments and frequent skimmer clears.",
     features: ["Heavy foliage cleanup", "Phosphate management", "Spring pollen filtration"]
@@ -24,7 +24,7 @@ const areasDetail = [
   {
     name: "Riverview",
     landmark: "Alafia River State Park",
-    image: "https://images.unsplash.com/photo-1600585154526-990dced4db0d?auto=format&fit=crop&q=80&w=800",
+    image: "https://images.unsplash.com/photo-1473448912268-2022ce9509d8?auto=format&fit=crop&q=80&w=800",
     description: "Reliable, weekly maintenance for the growing communities in Riverview, Gibsonton, and South Hillsborough county.",
     waterChemistryTip: "Proximity to the Alafia River basin brings high local humidity and airborne organic spores. We maintain slightly higher stabilizer (CYA) and chlorine residuals to protect against black algae spores common in river areas.",
     features: ["Humidity spore defense", "Algae prevention shocks", "Weekly tile line brushing"]
@@ -32,7 +32,7 @@ const areasDetail = [
   {
     name: "Apollo Beach",
     landmark: "Apollo Beach Manatee Viewing Center & Canals",
-    image: "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&q=80&w=800",
+    image: "https://images.unsplash.com/photo-1540339832862-474514150782?auto=format&fit=crop&q=80&w=800",
     description: "Expert saltwater pool maintenance along the Apollo Beach canals, Ruskin, and coastal areas.",
     waterChemistryTip: "Salt-laden sea air can accelerate corrosion on metal pool components. We monitor salt-system cells closely, use corrosion-resistant chemicals, and treat your water to protect surfaces and equipment longevity.",
     features: ["Salt-air chemistry balancing", "Salt cell chemical washing", "Corrosion prevention treatments"]
@@ -40,7 +40,7 @@ const areasDetail = [
   {
     name: "FishHawk & Lithia",
     landmark: "Lithia Springs & FishHawk Ranch Trails",
-    image: "https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&q=80&w=800",
+    image: "https://images.unsplash.com/photo-1502082553048-f009c37129b9?auto=format&fit=crop&q=80&w=800",
     description: "Top-tier pool services for the beautiful wooded communities of FishHawk, Lithia, and Valrico.",
     waterChemistryTip: "Heavy pine straw and oak leaves combined with acidic soils in naturally wooded areas can lower pool pH and alkalinity. We check alkalinity weekly and buffer your water to protect your pool plaster and tile surfaces.",
     features: ["pH buffer management", "Pine straw debris clearing", "Natural wooded spore defense"]
