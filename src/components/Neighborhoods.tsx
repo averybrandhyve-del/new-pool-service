@@ -4,9 +4,10 @@ import { MapPin, ChevronRight, Phone } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
 
 const neighborhoods = [
-  "Tampa", "Brandon", "Apollo Beach", "Riverview",
-  "FishHawk", "Lithia", "Valrico", "Bloomingdale",
-  "Sun City Center", "Gibsonton", "Seffner", "Plant City"
+  "Riverview",
+  "FishHawk",
+  "Brandon",
+  "Lithia"
 ];
 
 export default function Neighborhoods({ teaser = false }: { teaser?: boolean }) {
@@ -32,7 +33,7 @@ export default function Neighborhoods({ teaser = false }: { teaser?: boolean }) 
             transition={{ delay: 0.1 }}
             className="text-xl text-slate-600"
           >
-            Proudly keeping Tampa Bay pools clean and safe.
+            Proudly keeping Riverview, Fishhawk, Brandon, and Lithia pools clean and safe.
           </motion.p>
         </div>
 
@@ -75,14 +76,14 @@ export default function Neighborhoods({ teaser = false }: { teaser?: boolean }) 
             <div className="relative z-10">
               <h3 className="text-3xl font-bold mb-4">Not sure if we service your area?</h3>
               <p className="text-white/80 text-lg mb-8 max-w-2xl mx-auto">
-                We're always expanding our routes across Tampa Bay. Call or text to find out!
+                We're always expanding our routes. Call or text to find out!
               </p>
               <a
-                href="tel:8133803966"
+                href="tel:8137332829"
                 className="inline-flex items-center gap-2 bg-brand-gold text-brand-dark px-8 py-4 rounded-full font-bold text-lg shadow-xl hover:bg-brand-gold/90 transition-all cursor-pointer"
               >
                 <Phone size={20} />
-                (813) 380-3966
+                (813) 733-2829
               </a>
             </div>
           </div>

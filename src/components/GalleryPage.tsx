@@ -2,38 +2,10 @@ import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { 
   Camera, X, ChevronLeft, ChevronRight, Phone, 
-  Sparkles, AlertTriangle, CheckCircle2 
+  Sparkles, CheckCircle2 
 } from 'lucide-react';
 import Header from './Header';
 import Footer from './Footer';
-import BeforeAfterSlider from './BeforeAfterSlider';
-
-const galleryItems = [
-  {
-    title: "The Algae Rescue",
-    description: "This pool had been neglected for over 6 months, resulting in a severe black algae infestation and zero visibility.",
-    challenges: "High phosphate levels, clogged filtration system, and deep-rooted algae on the plaster surface.",
-    services: ["Chemical Shock Treatment", "Filter Deep Clean", "Manual Algae Scrubbing", "Water Balancing"],
-    before: "/images/gallery/algae_rescue_before.png",
-    after: "/images/gallery/algae_rescue_after.png"
-  },
-  {
-    title: "Abandoned Oasis Restoration",
-    description: "A foreclosed property where the pool had completely dried out and collected debris for over a year.",
-    challenges: "Heavy structural debris, severe plaster staining, and extreme chemical imbalance.",
-    services: ["Deep Vacuuming", "Tile Descaling", "Algae Scrubbing", "Full Chemical Balancing"],
-    before: "/images/gallery/abandoned_oasis_before.png",
-    after: "/images/gallery/abandoned_oasis_after.png"
-  },
-  {
-    title: "Water Clarity Transformation",
-    description: "An aging pool with consistently cloudy water and poor chemical balance despite weekly attempts by the homeowner.",
-    challenges: "Chronic phosphate buildup, low stabilizer, and poor filter flow rate from a neglected filter.",
-    services: ["Phosphate Treatment", "Filter Deep Clean", "Salt System Tune-Up", "Full Chemical Reset"],
-    before: "/images/gallery/equipment_upgrade_before.png",
-    after: "/images/gallery/equipment_upgrade_after.png"
-  }
-];
 
 const photos = [
   '/images/gallery-photos/Bazaart_1A5D566F-BEAE-4289-A6C0-3339A63E935B.JPEG',
@@ -44,11 +16,9 @@ const photos = [
   '/images/gallery-photos/Bazaart_8918DDA8-383C-48D5-BE32-D6F7AD905A90.JPEG',
   '/images/gallery-photos/Bazaart_A972153E-2ECD-49D9-A0F7-D6649A5398B3.JPEG',
   '/images/gallery-photos/Bazaart_BC00EB58-FACA-416E-820F-F30CAF32ABCA.JPEG',
-  '/images/gallery-photos/Bazaart_E5CA607F-4C9A-4996-A59C-F39547F51DFB.PNG',
   '/images/gallery-photos/Bazaart_EA54699A-AD05-4404-8FB8-03AF9FB1A7CA.JPEG',
   '/images/gallery-photos/Bazaart_EAB6DF71-E58C-477F-A6D2-4EB9B2E8A335.JPEG',
   '/images/gallery-photos/Bazaart_F09A9803-5D31-4C12-BE6E-AEACC815AE12.JPEG',
-  '/images/gallery-photos/Bazaart_FC0A08C3-B085-425D-AC86-D5472B34ECE6.PNG',
   '/images/gallery-photos/IMG_7560.jpeg',
   '/images/gallery-photos/IMG_7561.jpeg',
   '/images/gallery-photos/IMG_7562.jpeg',
@@ -96,7 +66,7 @@ export default function GalleryPage() {
             animate={{ opacity: 1, y: 0 }}
             className="text-4xl md:text-6xl font-bold text-white mb-4"
           >
-            Photo Gallery & Results
+            Photo Gallery
           </motion.h1>
           <motion.p
             initial={{ opacity: 0, y: 20 }}
@@ -104,100 +74,13 @@ export default function GalleryPage() {
             transition={{ delay: 0.1 }}
             className="text-xl text-white/70 max-w-2xl mx-auto"
           >
-            See the actual quality and transformations we deliver to pools across Tampa Bay.
+            See the actual quality we deliver to pools across Riverview, Fishhawk, Brandon, and Lithia.
           </motion.p>
         </div>
       </section>
 
-      {/* Before & After Section */}
-      <section className="py-20 bg-white overflow-hidden">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <motion.div
-              initial={{ opacity: 0, scale: 0.9 }}
-              whileInView={{ opacity: 1, scale: 1 }}
-              viewport={{ once: true }}
-              className="inline-flex items-center gap-2 bg-brand-blue/10 text-brand-blue px-4 py-2 rounded-full font-bold text-sm mb-4"
-            >
-              <Sparkles size={16} />
-              Real Results
-            </motion.div>
-            <h2 className="text-3xl md:text-5xl font-bold text-brand-dark mb-4">
-              Before & After Transformations
-            </h2>
-            <p className="text-xl text-slate-600 max-w-3xl mx-auto">
-              Slide the handle to see how we restore neglected pools into pristine backyard paradises.
-            </p>
-          </div>
-
-          <div className="space-y-24">
-            {galleryItems.map((item, i) => (
-              <div
-                key={item.title}
-                className={`flex flex-col ${i % 2 === 0 ? 'lg:flex-row' : 'lg:flex-row-reverse'} gap-12 items-center`}
-              >
-                {/* Slider Side */}
-                <motion.div
-                  initial={{ opacity: 0, x: i % 2 === 0 ? -50 : 50 }}
-                  whileInView={{ opacity: 1, x: 0 }}
-                  viewport={{ once: true }}
-                  className="w-full lg:w-3/5"
-                >
-                  <BeforeAfterSlider
-                    beforeImage={item.before}
-                    afterImage={item.after}
-                  />
-                </motion.div>
-
-                {/* Content Side */}
-                <motion.div
-                  initial={{ opacity: 0, x: i % 2 === 0 ? 50 : -50 }}
-                  whileInView={{ opacity: 1, x: 0 }}
-                  viewport={{ once: true }}
-                  className="w-full lg:w-2/5"
-                >
-                  <h3 className="text-3xl font-bold text-brand-dark mb-4">{item.title}</h3>
-                  <p className="text-slate-600 mb-6 leading-relaxed">
-                    {item.description}
-                  </p>
-
-                  <div className="space-y-6">
-                    <div className="bg-amber-50 border-l-4 border-amber-400 p-4 rounded-r-xl">
-                      <div className="flex items-center gap-2 text-amber-700 font-bold mb-1">
-                        <AlertTriangle size={18} />
-                        The Challenge
-                      </div>
-                      <p className="text-amber-800/80 text-sm">
-                        {item.challenges}
-                      </p>
-                    </div>
-
-                    <div>
-                      <div className="flex items-center gap-2 text-brand-blue font-bold mb-3">
-                        <CheckCircle2 size={18} />
-                        Services Performed
-                      </div>
-                      <div className="flex flex-wrap gap-2">
-                        {item.services.map(service => (
-                          <span
-                            key={service}
-                            className="bg-slate-100 text-slate-700 px-3 py-1 rounded-full text-xs font-semibold border border-slate-200"
-                          >
-                            {service}
-                          </span>
-                        ))}
-                      </div>
-                    </div>
-                  </div>
-                </motion.div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
       {/* Gallery Grid */}
-      <section className="py-20 bg-brand-light">
+      <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-brand-dark mb-4">Service Photos</h2>
@@ -217,7 +100,7 @@ export default function GalleryPage() {
                 <div className="relative overflow-hidden rounded-2xl shadow-md hover:shadow-2xl transition-shadow duration-300">
                   <img
                     src={src}
-                    alt={`Pool Ninja service photo ${i + 1}`}
+                    alt={`NEW Pool Service photo ${i + 1}`}
                     className="w-full h-auto object-cover group-hover:scale-105 transition-transform duration-500"
                     loading="lazy"
                   />
@@ -239,11 +122,11 @@ export default function GalleryPage() {
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">Want Your Pool to Look Like This?</h2>
           <p className="text-white/70 mb-8 text-lg">Call us today for a free estimate.</p>
           <a
-            href="tel:8133803966"
+            href="tel:8137332829"
             className="inline-flex items-center gap-2 bg-brand-gold text-brand-dark px-8 py-4 rounded-full font-bold text-lg shadow-lg hover:bg-brand-gold/90 hover:shadow-xl transition-all"
           >
             <Phone size={22} />
-            (813) 380-3966
+            (813) 733-2829
           </a>
         </div>
       </section>

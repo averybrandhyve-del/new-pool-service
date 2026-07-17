@@ -17,9 +17,9 @@ export default function TrustSection() {
               Excellence. Reliability. <br />Communication.
             </motion.h2>
             <p className="text-white/70 text-lg mb-8">
-              At Pool Ninja Service, we focus on what matters most: high-quality service,
+              At NEW Pool Service, we focus on what matters most: high-quality service,
               reliability, strong communication, and professional knowledge. Our professional
-              technicians bring 5+ years of industry experience to every pool we maintain.
+              technicians are in our 8th year of providing industry-leading pool care.
               We're not just cleaning pools — we're building trust with every visit.
             </p>
             <div className="flex flex-wrap gap-4">
@@ -31,7 +31,7 @@ export default function TrustSection() {
 
           <div className="grid grid-cols-2 gap-4">
             {[
-              { label: "Experienced", sub: "5+ Years Experience", icon: Award },
+              { label: "Experienced", sub: "8th Year in Business", icon: Award },
               { label: "Reliable", sub: "Show Up Every Week", icon: Clock },
               { label: "Transparent", sub: "Weekly Reports", icon: ShieldCheck },
               { label: "Responsive", sub: "Text, Email, Call", icon: Users }

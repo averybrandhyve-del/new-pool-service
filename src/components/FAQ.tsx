@@ -5,11 +5,11 @@ import { ChevronDown, HelpCircle } from 'lucide-react';
 const faqs = [
     {
         question: "What does your weekly pool service include?",
-        answer: "Every visit includes skimming the pool surface, vacuuming debris, brushing walls and steps, emptying pump and skimmer baskets, cleaning filters, tile cleaning, equipment monitoring, and full chemical balancing. It's a comprehensive service — we handle everything."
+        answer: "We offer three specialized tiers: our Chemical Care Plan (chemical balancing & basket emptying), Signature Service (standard full care, skimming, brushing & tile washing), and Elite Service (premium hands-off care with weekly vacuuming, filter cleans & minor repairs). All plans include weekly service reports."
     },
     {
         question: "Do you send service reports?",
-        answer: "Yes! After every visit, we email you a detailed weekly service report with notes on what was done, chemical readings, and any observations about your equipment. You'll always know exactly what happened during each visit."
+        answer: "Yes! After every visit, we email you a detailed weekly service report with notes on what was done, chemical readings, and photos. You'll always know exactly what happened during each visit."
     },
     {
         question: "What are your business hours?",
@@ -25,7 +25,7 @@ const faqs = [
     },
     {
         question: "What areas do you serve?",
-        answer: "We serve Tampa, Brandon, Apollo Beach, Riverview, FishHawk, Lithia, and surrounding neighborhoods. If you're not sure if we cover your area, give us a call at (813) 380-3966 and we'll let you know!"
+        answer: "We serve Riverview, FishHawk, Brandon, and Lithia. If you're not sure if we cover your area, give us a call or text at (813) 733-2829 and we'll let you know!"
     },
     {
         question: "Do I need to be home during service?",
@@ -33,7 +33,7 @@ const faqs = [
     },
     {
         question: "How do I get started?",
-        answer: "Just give us a call at (813) 380-3966 or email poolninjaservice@gmail.com. We'll schedule a time to come look at your pool, discuss your needs, and get you set up on a weekly schedule. It's that easy!"
+        answer: "Just give us a call or text at (813) 733-2829 or email Newpoolservicellc@gmail.com. We'll schedule a time to come look at your pool, discuss your needs, and get you set up on a weekly schedule. It's that easy!"
     }
 ];
 
@@ -68,7 +68,7 @@ export default function FAQ() {
                         transition={{ delay: 0.1 }}
                         className="text-xl text-slate-600"
                     >
-                        Everything you need to know about Pool Ninja Service.
+                        Everything you need to know about NEW Pool Service.
                     </motion.p>
                 </div>
 

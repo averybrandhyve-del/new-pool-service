@@ -6,18 +6,10 @@ import Footer from './Footer';
 
 const areasDetail = [
   {
-    name: "Tampa",
-    landmark: "Tampa Riverwalk & Bayshore Boulevard",
-    image: "https://images.unsplash.com/photo-1543872084-c7bd3822856f?auto=format&fit=crop&q=80&w=800",
-    description: "Servicing residential pools across the heart of Tampa. Our routes include South Tampa, New Tampa, Carrollwood, and Westchase.",
-    waterChemistryTip: "Tampa's high summer temperatures increase water evaporation, concentrating minerals. We closely monitor Calcium Hardness and Total Dissolved Solids (TDS) to prevent scaling on your pool plaster.",
-    features: ["Evaporation monitoring", "Urban pollen filtration", "Summer stormwater balancing"]
-  },
-  {
     name: "Brandon",
     landmark: "Westfield Brandon & Brandon Parkway",
     image: "/images/areas/brandon-mall.jpg",
-    description: "Our home base. We provide weekly cleaning and consistent chemical care throughout Brandon, Valrico, and Bloomingdale.",
+    description: "Our route covers all of Brandon, Valrico, and Bloomingdale, providing weekly cleaning and consistent chemical care.",
     waterChemistryTip: "Brandon's mature oak trees and pine canopies dump heavy organic debris, especially in spring. This organic loading depletes free chlorine and spikes phosphate levels. We perform preventive phosphate treatments and frequent skimmer clears.",
     features: ["Heavy foliage cleanup", "Phosphate management", "Spring pollen filtration"]
   },
@@ -30,14 +22,6 @@ const areasDetail = [
     features: ["Humidity spore defense", "Algae prevention shocks", "Weekly tile line brushing"]
   },
   {
-    name: "Apollo Beach",
-    landmark: "Apollo Beach Manatee Viewing Center & Canals",
-    image: "/images/areas/apollo-beach.jpg",
-    description: "Expert saltwater pool maintenance along the Apollo Beach canals, Ruskin, and coastal areas.",
-    waterChemistryTip: "Salt-laden sea air can accelerate corrosion on metal pool components. We monitor salt-system cells closely, use corrosion-resistant chemicals, and treat your water to protect surfaces and equipment longevity.",
-    features: ["Salt-air chemistry balancing", "Salt cell chemical washing", "Corrosion prevention treatments"]
-  },
-  {
     name: "FishHawk & Lithia",
     landmark: "Lithia Springs & FishHawk Ranch Trails",
     image: "/images/areas/lithia-springs.jpg",
@@ -48,10 +32,8 @@ const areasDetail = [
 ];
 
 const zipCodes = [
-  { region: "Tampa", zips: ["33602", "33606", "33609", "33611", "33618", "33624", "33626", "33629", "33647"] },
   { region: "Brandon & Valrico", zips: ["33510", "33511", "33594", "33596"] },
   { region: "Riverview", zips: ["33569", "33578", "33579"] },
-  { region: "Apollo Beach & Ruskin", zips: ["33572", "33570", "33573"] },
   { region: "Lithia & FishHawk", zips: ["33547"] }
 ];
 
@@ -70,7 +52,7 @@ export default function AreasPage() {
             className="inline-flex items-center gap-2 bg-brand-gold/20 text-brand-gold px-4 py-2 rounded-full font-bold text-sm mb-4"
           >
             <Compass size={16} />
-            Hillsborough County Coverage
+            Service Area Coverage
           </motion.div>
           <motion.h1
             initial={{ opacity: 0, y: 20 }}
@@ -85,7 +67,7 @@ export default function AreasPage() {
             transition={{ delay: 0.1 }}
             className="text-xl text-white/70 max-w-2xl mx-auto"
           >
-            Keeping pools crystal clear and chemically balanced across Brandon, Riverview, and Tampa.
+            Keeping pools crystal clear and chemically balanced across Riverview, Fishhawk, Brandon, and Lithia.
           </motion.p>
         </div>
       </section>
@@ -195,11 +177,11 @@ export default function AreasPage() {
           </p>
           <div className="flex justify-center gap-4">
             <a
-              href="tel:8133803966"
+              href="tel:8137332829"
               className="inline-flex items-center gap-2 bg-brand-gold text-brand-dark px-8 py-4 rounded-full font-bold shadow-lg hover:bg-brand-gold/90 transition-all cursor-pointer"
             >
               <Phone size={20} />
-              (813) 380-3966
+              (813) 733-2829
             </a>
             <a
               href="/#/contact"

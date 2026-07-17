@@ -52,7 +52,7 @@ export default function ContactPage() {
             animate={{ opacity: 1, y: 0 }}
             className="text-4xl md:text-6xl font-bold text-white mb-4"
           >
-            Contact Pool Ninja
+            Contact NEW Pool Service
           </motion.h1>
           <motion.p
             initial={{ opacity: 0, y: 20 }}
@@ -80,8 +80,8 @@ export default function ContactPage() {
                 </div>
                 <div>
                   <h3 className="font-bold text-brand-dark text-lg mb-1">Call or Text</h3>
-                  <a href="tel:8133803966" className="text-xl font-semibold text-brand-blue hover:underline">
-                    (813) 380-3966
+                  <a href="tel:8137332829" className="text-xl font-semibold text-brand-blue hover:underline">
+                    (813) 733-2829
                   </a>
                   <p className="text-slate-400 text-sm mt-1">Free estimates & emergency inquiries</p>
                 </div>
@@ -94,8 +94,8 @@ export default function ContactPage() {
                 </div>
                 <div>
                   <h3 className="font-bold text-brand-dark text-lg mb-1">Email Us</h3>
-                  <a href="mailto:poolninjaservice@gmail.com" className="text-lg font-semibold text-brand-blue hover:underline break-all">
-                    poolninjaservice@gmail.com
+                  <a href="mailto:Newpoolservicellc@gmail.com" className="text-lg font-semibold text-brand-blue hover:underline break-all">
+                    Newpoolservicellc@gmail.com
                   </a>
                   <p className="text-slate-400 text-sm mt-1">General inquiries & business proposals</p>
                 </div>
@@ -124,7 +124,7 @@ export default function ContactPage() {
                     <h4 className="font-bold text-lg">Our Service Coverage</h4>
                   </div>
                   <p className="text-white/70 text-sm leading-relaxed">
-                    Based in Brandon, FL. We run weekly service routes across Brandon, Riverview, Valrico, FishHawk, Lithia, Apollo Beach, and Tampa.
+                    Based in Riverview, FL. We run weekly service routes across Riverview, Fishhawk, Brandon, and Lithia.
                   </p>
                   <a href="/#/areas" className="inline-flex items-center text-brand-gold font-bold hover:underline text-sm gap-1">
                     View full map and ZIP codes &rarr;
@@ -149,7 +149,7 @@ export default function ContactPage() {
                     </div>
                     <h3 className="text-3xl font-bold text-brand-dark">Estimate Request Sent!</h3>
                     <p className="text-slate-600 max-w-md mx-auto leading-relaxed">
-                      Thank you for contacting Pool Ninja Service. Our team has received your information, and we will text or call you within 2 business hours to discuss your pool.
+                      Thank you for contacting NEW Pool Service. Our team has received your information, and we will text or call you within 2 business hours to discuss your pool.
                     </p>
                     <button 
                       onClick={() => setIsSubmitted(false)}
@@ -229,9 +229,9 @@ export default function ContactPage() {
                         onChange={handleChange}
                         className="w-full px-4 py-3 rounded-xl border border-slate-200 focus:outline-none focus:border-brand-blue text-slate-800 text-sm font-medium bg-white"
                       >
-                        <option value="weekly">Weekly Full Service Maintenance</option>
-                        <option value="green-cleanup">Green Pool Shock Cleanup</option>
-                        <option value="filter-clean">Filter Deep Cleaning</option>
+                        <option value="chemical-care">Chemical Care Plan</option>
+                        <option value="signature">Signature Service</option>
+                        <option value="elite">Elite Service</option>
                         <option value="other">Other / General Question</option>
                       </select>
                     </div>

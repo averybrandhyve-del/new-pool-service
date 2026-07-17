@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Phone, Menu, X } from 'lucide-react';
+import { Phone, Menu, X, LogIn } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
 import { cn } from '@/src/lib/utils';
 import { useLocation, useNavigate } from 'react-router-dom';
@@ -52,7 +52,7 @@ export default function Header() {
             >
               <img
                 src="/logo-main.svg"
-                alt="Pool Ninja Service"
+                alt="NEW Pool Service"
                 className={cn(
                   "transition-all duration-300",
                   isScrolled ? "h-10" : "h-14"
@@ -77,18 +77,17 @@ export default function Header() {
               </a>
             ))}
             <a
-              href="tel:8133803966"
-              aria-label="Call Pool Ninja Service at (813) 380-3966"
+              href="#"
               className="flex items-center gap-2 bg-brand-gold text-brand-dark px-5 py-2.5 rounded-full font-semibold shadow-lg hover:bg-brand-gold/90 hover:shadow-xl transition-all cursor-pointer"
             >
-              <Phone size={18} />
-              <span>(813) 380-3966</span>
+              <LogIn size={18} />
+              <span>Client Portal Login</span>
             </a>
           </nav>
 
           {/* Mobile Menu Button */}
           <div className="md:hidden flex items-center gap-4">
-            <a href="tel:8133803966" aria-label="Call us" className="text-brand-gold bg-white p-2 rounded-full shadow-md cursor-pointer">
+            <a href="tel:8137332829" aria-label="Call us" className="text-brand-gold bg-white p-2 rounded-full shadow-md cursor-pointer">
               <Phone size={20} />
             </a>
             <button
@@ -128,11 +127,11 @@ export default function Header() {
               ))}
               <div className="pt-4">
                 <a
-                  href="tel:8133803966"
+                  href="#"
                   className="flex items-center justify-center gap-2 bg-brand-gold text-brand-dark w-full py-4 rounded-xl font-bold shadow-lg"
                 >
-                  <Phone size={20} />
-                  <span>(813) 380-3966</span>
+                  <LogIn size={20} />
+                  <span>Client Portal Login</span>
                 </a>
               </div>
             </div>

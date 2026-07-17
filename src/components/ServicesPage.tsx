@@ -9,57 +9,60 @@ import Footer from './Footer';
 
 const servicesDetail = [
   {
-    id: "weekly-maintenance",
-    title: "Weekly Full Service Maintenance",
-    tagline: "Total peace of mind. Consistent, meticulous care every single week.",
-    icon: Droplets,
-    image: "https://images.unsplash.com/photo-1576013551627-0cc20b96c2a7?auto=format&fit=crop&q=80&w=800",
-    description: "Our comprehensive weekly service is designed to keep your pool water safe, healthy, and crystal clear. We don't just throw in chemicals and leave; we perform a thorough cleaning and water quality check during every visit.",
-    checklist: [
-      "Water chemistry testing & balancing (Chlorine, pH, Alkalinity, Calcium, Stabilizer, Salt)",
-      "Surface skimming to remove leaves, bugs, and organic debris",
-      "Thorough vacuuming of the pool floor",
-      "Wall, step, and tile line brushing to prevent algae growth",
-      "Emptying of skimmer, pump, and automatic cleaner baskets",
-      "Equipment monitoring to catch early warning signs",
-      "Email service reports sent instantly after every visit with photos and chemical log"
-    ],
-    pricing: "Starting at $149 / Month"
-  },
-  {
-    id: "green-cleanups",
-    title: "Green Pool Cleanups & Shock Treatments",
-    tagline: "Turn your green swamp back into a sparkling oasis in 48-72 hours.",
+    id: "chemical-care",
+    title: "Chemical Care Plan",
+    tagline: "Worry-free chemistry. We handle testing and chemicals; you do the rest.",
     icon: Zap,
-    image: "https://images.unsplash.com/photo-1507925921958-8a62f3d1a50d?auto=format&fit=crop&q=80&w=800",
-    description: "A green pool is not just an eyesore — it's a breeding ground for mosquitoes and harmful bacteria. Our aggressive green pool cleanup process eliminates algae, removes heavy organic loading, and sanitizes the water safely.",
+    image: "https://images.unsplash.com/photo-1576013551627-0cc20b96c2a7?auto=format&fit=crop&q=80&w=800",
+    description: "This plan is designed for homeowners who prefer to handle brushing, skimming debris, and vacuuming themselves. We keep the water chemistry perfect, safe, and balanced.",
     checklist: [
-      "Aggressive algaecide and chemical shock dosing",
-      "Manual algae scrubbing of all surfaces",
-      "Vacuum-to-waste of dead algae and heavy debris (bypassing the filter)",
-      "Multiple filter deep-clean cycles during the process",
-      "Water clarification and advanced flocculation treatments",
-      "Full water balancing to restore safety and swimmer comfort",
-      "Water chemistry follow-up to identify why the pool went green"
+      "Weekly professional water testing (chlorine, pH, alkalinity, calcium, CYA)",
+      "All standard balancing chemicals included",
+      "Skimmer and pump baskets emptied",
+      "Filter cleaned when needed",
+      "A detailed service report with photos and chemistry readings sent after each visit"
     ],
-    pricing: "Custom Estimate Required"
+    pricing: "Starting at $99 / Month"
   },
   {
-    id: "filter-cleans",
-    title: "Regular Filter Deep Cleans",
-    tagline: "Protect your equipment, lower electric bills, and keep water clear.",
-    icon: ShieldAlert,
-    image: "https://images.unsplash.com/photo-1572331165267-854da2b10ccc?auto=format&fit=crop&q=80&w=800",
-    description: "A dirty filter restricts water flow, forcing your pump to work harder, consume more electricity, and balance chemicals poorly. We recommend a full filter teardown and chemical cleaning every 3 to 6 months.",
+    id: "signature-service",
+    title: "Signature Service",
+    tagline: "Our standard full service. Ideal for screened pools or light yard debris.",
+    icon: Droplets,
+    image: "/images/gallery-photos/Bazaart_1A5D566F-BEAE-4289-A6C0-3339A63E935B.JPEG",
+    description: "This plan works best for screened pools or yards with minimal tree debris. We handle the chemistry, skimming, brushing, tile cleaning, and vacuuming as needed.",
     checklist: [
-      "Complete filter disassembly and grid/cartridge extraction",
-      "Thorough chemical descaling and pressure washing of cartridges/grids",
-      "Internal manifold and tank flush to remove caked-on debris",
-      "Check of O-rings, air relief valves, and filter housing condition",
-      "Reassembly with professional lubrication of sealing gaskets",
-      "Post-clean pressure monitoring to establish baseline flow rate"
+      "Weekly professional water testing (chlorine, pH, alkalinity, calcium, CYA)",
+      "All standard balancing chemicals included",
+      "Skimmer and pump baskets emptied",
+      "Filter cleaned when needed",
+      "Full surface skimming of debris",
+      "Brushing walls and steps & tile washing",
+      "Vacuum service when needed (typically up to 2 times per month)",
+      "A detailed, email service report with photos and chemistry readings"
     ],
-    pricing: "Starting at $110 / Clean"
+    pricing: "Starting at $140 / Month"
+  },
+  {
+    id: "elite-service",
+    title: "Elite Service",
+    tagline: "Ultimate convenience. Complete, hands-off professional care.",
+    icon: ShieldCheck,
+    image: "https://images.unsplash.com/photo-1572331165267-854da2b10ccc?auto=format&fit=crop&q=80&w=800",
+    description: "Most of our customers choose Elite so their pool is fully handled every week without needing to worry about maintenance. This is our most comprehensive and hands-off option.",
+    checklist: [
+      "Weekly professional water testing (chlorine, pH, alkalinity, calcium, CYA)",
+      "All standard balancing chemicals and specialty chemicals (phosphates, algae, metal removers) included",
+      "Skimmer and pump baskets emptied",
+      "Filter cleaned on schedule of 4-6 weeks or weekly if needed",
+      "Tile washing, brushing walls and steps & full surface skimming",
+      "Vacuuming every single visit",
+      "Minor repair/replacement of filter/pump lid o-rings and air relief valves",
+      "A detailed, email service report with photos and chemistry readings",
+      "Priority service scheduling if any issues arise"
+    ],
+    pricing: "$200 / Month",
+    recommended: true
   }
 ];
 
@@ -85,7 +88,7 @@ export default function ServicesPage() {
             animate={{ opacity: 1, y: 0 }}
             className="text-4xl md:text-6xl font-bold text-white mb-4"
           >
-            Our Pool Services
+            NEW Pool Services
           </motion.h1>
           <motion.p
             initial={{ opacity: 0, y: 20 }}
@@ -93,8 +96,35 @@ export default function ServicesPage() {
             transition={{ delay: 0.1 }}
             className="text-xl text-white/70 max-w-2xl mx-auto"
           >
-            From weekly balancing to deep filter cleans, we keep your pool pristine.
+            Weekly Residential Pool Service
           </motion.p>
+        </div>
+      </section>
+
+      {/* Client Portal & Invoicing Section */}
+      <section className="py-12 bg-white border-b border-slate-100">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="bg-brand-blue/5 border border-brand-blue/10 rounded-3xl p-8 md:p-10 flex flex-col md:flex-row gap-8 items-center justify-between">
+            <div className="space-y-4 max-w-2xl text-left">
+              <span className="bg-brand-blue/10 text-brand-blue px-4 py-2 rounded-full text-xs font-bold uppercase tracking-wider">Client Portal & Invoicing</span>
+              <h3 className="text-2xl md:text-3xl font-bold text-brand-dark">Secure Online Access to Your Account</h3>
+              <p className="text-slate-600 leading-relaxed">
+                Manage your pool service easily with our secure client portal. Enjoy automatic monthly invoicing, set up automatic payments, and track your complete service history.
+              </p>
+            </div>
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 w-full md:w-auto shrink-0 text-left">
+              {[
+                { title: "Automatic Invoicing", desc: "Sent on the 1st of each month" },
+                { title: "Flexible Payments", desc: "Manage autopay & save receipts" },
+                { title: "Detailed Service History", desc: "Access reports, readings & photos" }
+              ].map((item, idx) => (
+                <div key={idx} className="bg-white p-5 rounded-2xl border border-slate-100 shadow-sm">
+                  <h4 className="font-bold text-brand-dark text-sm mb-1">{item.title}</h4>
+                  <p className="text-slate-500 text-xs">{item.desc}</p>
+                </div>
+              ))}
+            </div>
+          </div>
         </div>
       </section>
 
@@ -122,6 +152,11 @@ export default function ServicesPage() {
                   <div className="absolute top-4 left-4 bg-brand-dark/95 backdrop-blur-sm text-brand-gold px-4 py-2 rounded-xl font-bold border border-brand-gold/30">
                     {service.pricing}
                   </div>
+                  {service.recommended && (
+                    <div className="absolute top-4 right-4 bg-brand-gold text-brand-dark px-4 py-2 rounded-xl font-bold shadow-lg text-xs uppercase tracking-wider">
+                      Recommended
+                    </div>
+                  )}
                 </div>
               </div>
 
@@ -171,11 +206,11 @@ export default function ServicesPage() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
-              href="tel:8133803966"
+              href="tel:8137332829"
               className="inline-flex items-center justify-center gap-2 bg-brand-gold text-brand-dark px-8 py-4 rounded-full font-bold text-lg shadow-xl hover:bg-brand-gold/90 transition-all"
             >
               <Phone size={22} />
-              (813) 380-3966
+              (813) 733-2829
             </a>
             <a
               href="/#/contact"

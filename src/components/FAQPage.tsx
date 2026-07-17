@@ -181,11 +181,11 @@ export default function FAQPage() {
           </p>
           <div className="flex justify-center gap-4">
             <a
-              href="tel:8133803966"
+              href="tel:8137332829"
               className="inline-flex items-center gap-2 bg-brand-gold text-brand-dark px-8 py-4 rounded-full font-bold shadow-lg hover:bg-brand-gold/90 transition-all"
             >
               <Phone size={20} />
-              (813) 380-3966
+              (813) 733-2829
             </a>
             <a
               href="/#/contact"

@@ -20,17 +20,17 @@ export default function Footer() {
             <div className="flex items-center gap-2 mb-6">
               <img
                 src="/logo-main.svg"
-                alt="Pool Ninja Service"
+                alt="NEW Pool Service"
                 className="h-14"
               />
             </div>
             <p className="text-white/60 leading-relaxed mb-8">
-              Professional pool cleaning and maintenance for Tampa Bay homeowners.
+              Professional pool cleaning and maintenance for homeowners in Riverview, Fishhawk, Brandon, and Lithia.
               Professional, reliable service, and unmatched communication.
             </p>
             <div className="flex gap-4">
               {[{ Icon: Facebook, label: "Facebook" }, { Icon: Instagram, label: "Instagram" }].map(({ Icon, label }) => (
-                <a key={label} href="#" aria-label={`Follow Pool Ninja on ${label}`} className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-brand-gold hover:text-brand-dark transition-colors cursor-pointer">
+                <a key={label} href="#" aria-label={`Follow NEW Pool Service on ${label}`} className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-brand-gold hover:text-brand-dark transition-colors cursor-pointer">
                   <Icon size={20} />
                 </a>
               ))}
@@ -54,11 +54,10 @@ export default function Footer() {
           <div>
             <h4 className="text-lg font-bold mb-6">Service Areas</h4>
             <ul className="space-y-4 text-white/60">
-              <li>Tampa & Brandon</li>
               <li>Riverview</li>
-              <li>Apollo Beach</li>
-              <li>FishHawk & Lithia</li>
-              <li>Surrounding Areas</li>
+              <li>Fishhawk</li>
+              <li>Brandon</li>
+              <li>Lithia</li>
             </ul>
           </div>
 
@@ -68,15 +67,15 @@ export default function Footer() {
             <ul className="space-y-4">
               <li className="flex items-start gap-3 text-white/60">
                 <MapPin size={20} className="text-brand-gold shrink-0" />
-                <span>Brandon, FL 33511</span>
+                <span>Riverview, FL 33578</span>
               </li>
               <li className="flex items-center gap-3 text-white/60">
                 <Phone size={20} className="text-brand-gold shrink-0" />
-                <a href="tel:8133803966" className="hover:text-white transition-colors">(813) 380-3966</a>
+                <a href="tel:8137332829" className="hover:text-white transition-colors">(813) 733-2829</a>
               </li>
               <li className="flex items-center gap-3 text-white/60">
                 <Mail size={20} className="text-brand-gold shrink-0" />
-                <a href="mailto:poolninjaservice@gmail.com" className="hover:text-white transition-colors">poolninjaservice@gmail.com</a>
+                <a href="mailto:Newpoolservicellc@gmail.com" className="hover:text-white transition-colors">Newpoolservicellc@gmail.com</a>
               </li>
             </ul>
             <div className="mt-6 text-white/40 text-sm">
@@ -88,7 +87,7 @@ export default function Footer() {
         </div>
 
         <div className="pt-10 border-t border-white/10 text-center text-white/40 text-sm">
-          <p>© {new Date().getFullYear()} Pool Ninja Service LLC. All rights reserved. Brandon, FL</p>
+          <p>© {new Date().getFullYear()} NEW Pool Service LLC. All rights reserved. Riverview, FL</p>
         </div>
       </div>
     </footer>

@@ -12,7 +12,7 @@ export default function Hero() {
       <div className="absolute inset-0 z-0">
         <img
           src="https://images.unsplash.com/photo-1576013551627-0cc20b96c2a7?auto=format&fit=crop&q=80&w=2000"
-          alt="Crystal clear pool maintained by Pool Ninja Service"
+          alt="Crystal clear pool maintained by NEW Pool Service"
           className="w-full h-full object-cover"
           referrerPolicy="no-referrer"
         />
@@ -33,7 +33,7 @@ export default function Hero() {
                 <Star key={i} size={16} className="fill-brand-gold text-brand-gold" />
               ))}
             </div>
-            <span className="text-white text-sm font-semibold">Tampa Bay's Pool Ninja</span>
+            <span className="text-white text-sm font-semibold">NEW Pool Service</span>
           </motion.div>
 
           {/* Headline */}
@@ -43,8 +43,9 @@ export default function Hero() {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="text-5xl md:text-7xl font-bold text-white leading-[1.1] mb-6"
           >
-            Crystal Clear Water. <br />
-            <span className="text-brand-gold">Zero Hassle.</span>
+            Consistent. <br />
+            Communication. <br />
+            <span className="text-brand-gold">Caring.</span>
           </motion.h1>
 
           <motion.p
@@ -53,7 +54,7 @@ export default function Hero() {
             transition={{ duration: 0.6, delay: 0.3 }}
             className="text-xl text-white/90 mb-10 leading-relaxed"
           >
-            Tampa's most reliable pool service. We handle the chemicals, cleaning, and upkeep so you can just enjoy the swim.
+            We handle chemicals, cleaning, and upkeep so you can enjoy your back yard oasis.
           </motion.p>
 
           {/* CTAs */}
@@ -64,18 +65,18 @@ export default function Hero() {
             className="flex flex-col sm:flex-row gap-4"
           >
             <a
-              href="/contact"
-              onClick={(e) => { e.preventDefault(); navigate('/contact'); }}
+              href="tel:8137332829"
               className="group bg-brand-gold hover:bg-brand-gold/90 text-brand-dark px-8 py-4 rounded-full text-lg font-bold shadow-2xl shadow-brand-gold/30 flex items-center justify-center gap-2 transition-all cursor-pointer"
             >
-              Get Your Free Quote
+              <Phone size={20} />
+              Call 813-733-2829
             </a>
             <a
               href="/services"
               onClick={(e) => { e.preventDefault(); navigate('/services'); }}
               className="bg-white/10 backdrop-blur-md border border-white/30 hover:bg-white/20 text-white px-8 py-4 rounded-full text-lg font-bold transition-all cursor-pointer text-center"
             >
-              See Pricing
+              Services
             </a>
           </motion.div>
 

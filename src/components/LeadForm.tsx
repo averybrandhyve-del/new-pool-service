@@ -55,8 +55,8 @@ export default function LeadForm() {
                             </div>
                             <div>
                                 <p className="text-white/60 font-medium mb-1">Call for immediate service</p>
-                                <a href="tel:8133803966" className="text-3xl font-bold text-white hover:text-brand-gold transition-colors">
-                                    (813) 380-3966
+                                <a href="tel:8137332829" className="text-3xl font-bold text-white hover:text-brand-gold transition-colors">
+                                    (813) 733-2829
                                 </a>
                             </div>
                         </motion.div>
@@ -76,7 +76,7 @@ export default function LeadForm() {
                                 </div>
                                 <h3 className="text-3xl font-bold text-brand-dark mb-4">Quote Requested!</h3>
                                 <p className="text-slate-600 text-lg">
-                                    Thank you for reaching out. A Pool Ninja expert will contact you shortly to provide your custom quote.
+                                    Thank you for reaching out. A NEW Pool Service expert will contact you shortly to provide your custom quote.
                                 </p>
                             </div>
                         ) : (
@@ -106,15 +106,15 @@ export default function LeadForm() {
 
                                 <div className="space-y-2">
                                     <label className="text-sm font-bold text-brand-dark">Property Address (Optional)</label>
-                                    <input type="text" className="w-full bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-brand-gold transition-all" placeholder="123 Pool Ln, Tampa, FL" />
+                                    <input type="text" className="w-full bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-brand-gold transition-all" placeholder="123 Pool Ln, Riverview, FL" />
                                 </div>
 
                                 <div className="space-y-2">
                                     <label className="text-sm font-bold text-brand-dark">Service Needed</label>
                                     <select className="w-full bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-brand-gold transition-all appearance-none cursor-pointer">
-                                        <option>Weekly Maintenance</option>
-                                        <option>Green Pool Cleanup</option>
-                                        <option>Filter Deep Clean</option>
+                                        <option>Chemical Care Plan</option>
+                                        <option>Signature Service</option>
+                                        <option>Elite Service</option>
                                         <option>General Inquiry</option>
                                     </select>
                                 </div>
