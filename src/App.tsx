@@ -25,10 +25,10 @@ export default function App() {
           <div className="absolute inset-0 opacity-2" style={{ backgroundImage: 'radial-gradient(circle at 50% 50%, #007e81 0%, transparent 60%)' }} />
           <div className="max-w-4xl mx-auto px-4 relative z-10 space-y-4">
             <p className="text-2xl md:text-3.5xl font-serif italic text-brand-dark leading-relaxed max-w-3xl mx-auto">
-              "Commit your actions to the Lord, and your plans will succeed."
+              "If anyone is in Christ, he is a new creation. The old has passed away; the new has come."
             </p>
             <p className="text-brand-gold font-bold uppercase tracking-widest text-sm">
-              Proverbs 16:3 NLT
+              2 Corinthians 5:17
             </p>
           </div>
         </section>
