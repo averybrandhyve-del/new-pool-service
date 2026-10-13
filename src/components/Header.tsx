@@ -77,7 +77,7 @@ export default function Header() {
               </a>
             ))}
             <a
-              href="#"
+              href="https://newpoolsvc.mypoolportal.com/"
               className="flex items-center gap-2 bg-brand-gold text-brand-dark px-5 py-2.5 rounded-full font-semibold shadow-lg hover:bg-brand-gold/90 hover:shadow-xl transition-all cursor-pointer"
             >
               <LogIn size={18} />
@@ -127,7 +127,7 @@ export default function Header() {
               ))}
               <div className="pt-4">
                 <a
-                  href="#"
+                  href="https://newpoolsvc.mypoolportal.com/"
                   className="flex items-center justify-center gap-2 bg-brand-gold text-brand-dark w-full py-4 rounded-xl font-bold shadow-lg"
                 >
                   <LogIn size={20} />
