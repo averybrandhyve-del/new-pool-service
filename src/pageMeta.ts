@@ -31,7 +31,7 @@ const META: Record<string, { title: string; description: string }> = {
   '/faq': {
     title: 'Pool Cleaning FAQ | NEW Pool Service, Riverview FL',
     description:
-      'Answers to common questions about weekly pool cleaning, chemical care, equipment, scheduling and service areas from NEW Pool Service in Riverview and Brandon, FL.',
+      'Answers to common questions about weekly pool cleaning, chemical care, scheduling and service areas from NEW Pool Service in Riverview and Brandon, FL.',
   },
   '/contact': {
     title: 'Contact NEW Pool Service | Free Pool Cleaning Quote',
