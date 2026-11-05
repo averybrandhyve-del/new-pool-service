@@ -1,5 +1,6 @@
 {
   "rewrites": [
-    { "source": "/(gallery|services|reviews|areas|faq|contact)/?", "destination": "/index.html" }
+    { "source": "/:page(gallery|services|reviews|areas|faq|contact)", "destination": "/index.html" },
+    { "source": "/:page(gallery|services|reviews|areas|faq|contact)/", "destination": "/index.html" }
   ]
 }
