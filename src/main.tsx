@@ -8,6 +8,7 @@ import ReviewsPage from './components/ReviewsPage.tsx';
 import AreasPage from './components/AreasPage.tsx';
 import FAQPage from './components/FAQPage.tsx';
 import ContactPage from './components/ContactPage.tsx';
+import { PageMeta } from './pageMeta.ts';
 import './index.css';
 
 function ScrollToTop() {
@@ -29,6 +30,7 @@ createRoot(document.getElementById('root')!).render(
   <StrictMode>
     <BrowserRouter>
       <ScrollToTop />
+      <PageMeta />
       <Routes>
         <Route path="/" element={<App />} />
         <Route path="/gallery" element={<GalleryPage />} />
