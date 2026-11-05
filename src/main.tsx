@@ -1,6 +1,6 @@
 import { StrictMode, useEffect } from 'react';
 import { createRoot } from 'react-dom/client';
-import { HashRouter, Routes, Route, useLocation } from 'react-router-dom';
+import { BrowserRouter, Routes, Route, useLocation } from 'react-router-dom';
 import App from './App.tsx';
 import GalleryPage from './components/GalleryPage.tsx';
 import ServicesPage from './components/ServicesPage.tsx';
@@ -20,9 +20,14 @@ function ScrollToTop() {
   return null;
 }
 
+// Old links used hash routes (/#/contact); move them to the real path.
+if (window.location.hash.startsWith('#/')) {
+  window.history.replaceState(null, '', window.location.hash.slice(1));
+}
+
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
-    <HashRouter>
+    <BrowserRouter>
       <ScrollToTop />
       <Routes>
         <Route path="/" element={<App />} />
@@ -33,6 +38,6 @@ createRoot(document.getElementById('root')!).render(
         <Route path="/faq" element={<FAQPage />} />
         <Route path="/contact" element={<ContactPage />} />
       </Routes>
-    </HashRouter>
+    </BrowserRouter>
   </StrictMode>,
 );

@@ -188,7 +188,7 @@ export default function FAQPage() {
               (813) 733-2829
             </a>
             <a
-              href="/#/contact"
+              href="/contact"
               className="inline-flex items-center bg-brand-blue text-white px-8 py-4 rounded-full font-bold shadow-lg hover:bg-brand-blue/90 transition-all cursor-pointer"
             >
               Send Us a Message

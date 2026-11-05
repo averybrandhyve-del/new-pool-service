@@ -128,7 +128,7 @@ export default function BeforeAfterGallery({ teaser = false }: { teaser?: boolea
                 </div>
 
                 <a
-                  href="/#/contact"
+                  href="/contact"
                   className="mt-8 inline-flex items-center justify-center bg-brand-blue text-white px-8 py-3.5 rounded-full font-bold shadow-lg hover:bg-brand-blue/90 transition-all cursor-pointer"
                 >
                   Get a Similar Result

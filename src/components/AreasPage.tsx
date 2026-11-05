@@ -184,7 +184,7 @@ export default function AreasPage() {
               (813) 733-2829
             </a>
             <a
-              href="/#/contact"
+              href="/contact"
               className="inline-flex items-center bg-white/10 hover:bg-white/20 border border-white/20 px-8 py-4 rounded-full font-bold transition-all"
             >
               Contact Us Online
