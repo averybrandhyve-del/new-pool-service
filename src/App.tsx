@@ -55,7 +55,7 @@ export default function App() {
                 Call (813) 733-2829
               </a>
               <a
-                href="/#/contact"
+                href="/contact"
                 className="inline-flex items-center justify-center bg-white/10 hover:bg-white/20 border border-white/20 text-white px-8 py-4 rounded-full font-bold text-lg transition-all"
               >
                 Request Free Quote

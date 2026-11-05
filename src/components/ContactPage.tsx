@@ -112,7 +112,7 @@ export default function ContactPage() {
                   <p className="text-white/70 text-sm leading-relaxed">
                     Based in Riverview, FL. We run weekly service routes across Riverview, Fishhawk, Brandon, and Lithia.
                   </p>
-                  <a href="/#/areas" className="inline-flex items-center text-brand-gold font-bold hover:underline text-sm gap-1">
+                  <a href="/areas" className="inline-flex items-center text-brand-gold font-bold hover:underline text-sm gap-1">
                     View full map and ZIP codes &rarr;
                   </a>
                 </div>

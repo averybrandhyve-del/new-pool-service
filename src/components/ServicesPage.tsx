@@ -184,7 +184,7 @@ export default function ServicesPage() {
                 </ul>
 
                 <a
-                  href="/#/contact"
+                  href="/contact"
                   className="inline-flex items-center gap-2 bg-brand-blue hover:bg-brand-blue/90 text-white px-8 py-4 rounded-full font-bold shadow-lg shadow-brand-blue/20 transition-all cursor-pointer"
                 >
                   Request This Service
@@ -213,7 +213,7 @@ export default function ServicesPage() {
               (813) 733-2829
             </a>
             <a
-              href="/#/contact"
+              href="/contact"
               className="inline-flex items-center justify-center bg-white/10 hover:bg-white/20 border border-white/20 text-white px-8 py-4 rounded-full font-bold text-lg transition-all"
             >
               Message Us Online

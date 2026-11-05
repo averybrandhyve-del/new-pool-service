@@ -85,7 +85,7 @@ export default function ReviewsPage() {
             We stand behind our work. If you're not completely satisfied with your weekly pool service, notify us within 24 hours, and we will return to make it right at no extra charge.
           </p>
           <a
-            href="/#/contact"
+            href="/contact"
             className="inline-flex items-center gap-2 bg-brand-blue text-white px-8 py-4 rounded-full font-bold shadow-lg hover:bg-brand-blue/90 transition-all cursor-pointer"
           >
             Experience Top-Tier Service
